@@ -1,0 +1,38 @@
+@keyframes flipBack {
+  0% { width: 150px }
+  100% { width: 5px }
+}
+
+@keyframes flipFront {
+  0% { width: 5px }
+  100% { width: 150px }
+}
+
+@keyframes slideIn {
+  0% {  position: absolute;
+		top:0;
+		bottom: 0;
+		left: -100%;
+		right: 0; }
+  100% {position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;}
+}
+
+
+div{
+	width: 600px;
+    height: 600px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	
+    margin: auto;
+	animation:slideIn 4s;
+	animation-fill-mode: forwards;
+}
